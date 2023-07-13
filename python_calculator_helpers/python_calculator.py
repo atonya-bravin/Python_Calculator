@@ -9,37 +9,42 @@ class PythonCalculator():
     The class that holds the methods that help with the calculations
     """
 
-    def sum(self, first_number: int, second_number: int) -> int:
+    def __init__(self, first_number: int, second_number: int):
+        self.first_number = first_number
+        self.second_number = second_number
+
+
+    def sum(self) -> int:
         """
         This is a function that takes in two numbers
         and returns to us their sum
         """
-        return first_number + second_number
+        return self.first_number + self.second_number
 
-    def dif(self, first_number: int, second_number: int) -> int:
+    def dif(self) -> int:
         """
         This is a function that takes in two
         numbers and returns to us their difference
         """
-        return first_number - second_number
+        return self.first_number - self.second_number
 
-    def mult(self, first_number: int, second_number: int) -> int:
+    def mult(self) -> int:
         """
         This is a function that takes in two
         numbers and returns to us their product
         """
-        return first_number * second_number
+        return self.first_number * self.second_number
 
-    def div(self, first_number: int, second_number: int) -> float:
+    def div(self) -> float:
         """
         This is a function that takes in two
         numbers and returns to us their quatient
         """
-        return first_number / second_number
+        return self.first_number / self.second_number
 
-    def rem(self, first_number: int, second_number: int) -> int:
+    def rem(self) -> int:
         """
         This is a function that takes in two numbers and returns to us the
         reminder after their division
         """
-        return first_number % second_number
+        return self.first_number % self.second_number
