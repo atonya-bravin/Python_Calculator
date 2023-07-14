@@ -30,8 +30,10 @@ class CalculatorHelpersTester(TestCase):
         
     def test_div(self):
         self.assertEqual(self.py_calc.div(), 0.5,
-                         "There is an issue calfulating the quatient!!")
+                         "There is an issue calculating the quatient!!")
         
-    
+    def test_rem(self):
+        self.assertEqual(self.py_calc.rem(), 10,
+                         "There is an issue calculating the remainder!!")
 if __name__ == '__main__':
     unittest.main()
