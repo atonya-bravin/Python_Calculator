@@ -1,3 +1,4 @@
+from equation_evaluator import Evaluator
 """
 This module contains a class that holds the helper
 methods to help with calculations
@@ -48,3 +49,11 @@ class PythonCalculator():
         reminder after their division
         """
         return self.first_number % self.second_number
+
+
+if __name__ == "__main__":
+    equation = input("Enter your Equation: ")
+    math_equation = Evaluator(equation)
+    equation_items = math_equation.equation_intersector()
+    operands = equation_items['operands']
+    operators = equation_items['operators']
