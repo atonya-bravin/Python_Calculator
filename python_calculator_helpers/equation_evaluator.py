@@ -14,7 +14,7 @@ class Evaluator():
         string and appends the operands and the operators in the 
         respective lists
         """
-
+        
         # this is the list that holds the operands i.e the numbers
         operands = []
 
@@ -29,11 +29,35 @@ class Evaluator():
 
         # Inserts the operands into the operands list
         for index in range(0, len(complete_list), 2):
-            operands.append(complete_list[index])
+            # check to validate that the operand is a valid integer
+            try:
+                operand = int(complete_list[index])
+                operands.append(operand)
+            except ValueError:
+                operand = complete_list[index]
+                print(f"Value Error: {operand} not an number")
+
+        # a list of acceptable operands
+        acceptable_operators = ["/", "*", "+", "-"]
+
+        # check if any of the acceptable operators appears in the operands list
+        # If it appears, it means that two operators followed each other
+
+        for index in range(len(complete_list)):
+            if complete_list[index] in acceptable_operators and index % 2 == 0:
+                first_operator = complete_list[index - 1]
+                second_operator = complete_list[index]
+                print(f"Syntax Error: Operators {first_operator} {second_operator}")
+                exit(1)
 
         # Inserts the operator into the operators list
-        for index in range(1, len(complete_list), 2):
-            operators.append(complete_list[index])
+        for index in range(1, len(complete_list), 2):            
+            if complete_list[index] in acceptable_operators:
+                operators.append(complete_list[index])
+
+            else:
+                print(f"Syntax Error: {complete_list[index]} is not a known operator")
+                exit(1)
 
         # dictionaty that we can return to our main program to
         # maintain our abstraction
