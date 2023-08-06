@@ -1,4 +1,6 @@
 ![image](https://github.com/atonya-bravin/Python_Calculator/blob/main/Cover_image.png)
+  
+  
 ![Repo size](https://img.shields.io/github/repo-size/atonya-bravin/Python_Calculator)
 ![Repo License](https://img.shields.io/github/license/atonya-bravin/Python_Calculator.svg)
 ![Latest commit](https://img.shields.io/github/last-commit/atonya-bravin/Python_Calculator?style=round-square)
