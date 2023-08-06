@@ -6,7 +6,7 @@
 ![Latest commit](https://img.shields.io/github/last-commit/atonya-bravin/Python_Calculator?style=round-square)
 # Python Calculator
 This project is aimed at emulating a calculator using the python programming language.
-Most Calculators, including the calculator shiped within python does not include all the BODMAS evaluations. In this project, we try to cover everything a calculator should do.
+Most Calculators, including the calculator shiped within python does not include all the **BODMAS** evaluations. In this project, we try to cover everything a calculator should do.
 
 ## Features
 - Easy CLI interaction point
