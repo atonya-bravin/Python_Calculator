@@ -36,9 +36,10 @@ class Evaluator():
             except ValueError:
                 operand = complete_list[index]
                 print(f"Value Error: {operand} not an number")
+                exit(1)
 
         # a list of acceptable operands
-        acceptable_operators = ["/", "*", "+", "-"]
+        acceptable_operators = ["of", "/", "*", "+", "-"]
 
         # check if any of the acceptable operators appears in the operands list
         # If it appears, it means that two operators followed each other
