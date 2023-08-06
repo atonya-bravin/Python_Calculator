@@ -35,4 +35,7 @@ Enter your Equation: 55 * 4 + 2 / 2 of 3 + 5000
 5220.333333333333
 ```
 
+## Known Weaknesses
+- **Brackets not implemented** - So far, in the BODMAS principle, I have implemented all except Brackets.
+- **Mathematical functions not implemented** - Some of the critical mathematical functions have not been included in the application.
 
