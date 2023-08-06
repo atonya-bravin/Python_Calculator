@@ -1,9 +1,7 @@
-# HTML/CSS Handson Projects
+![image](https://github.com/atonya-bravin/Python_Calculator/blob/main/Cover_image.png)
 ![Repo size](https://img.shields.io/github/repo-size/atonya-bravin/Python_Calculator)
 ![Repo License](https://img.shields.io/github/license/atonya-bravin/Python_Calculator.svg)
 ![Latest commit](https://img.shields.io/github/last-commit/atonya-bravin/Python_Calculator?style=round-square)
- 
-![image](https://github.com/atonya-bravin/Python_Calculator/blob/main/Cover_image.png)
 # Python Calculator
 This project is aimed at emulating a calculator using the python programming language.
 Most Calculators, including the python calculator do not include all the BODMAS evaluations. In this project, we try to cover everything a calculator should do.
